@@ -23,19 +23,19 @@ for i in range(0, trials):
     A_wins = 0
     B_wins = 0
 
-    #trial 1
+    #region 1
     if random() < .87:
         A_wins += 1
     else:
         B_wins += 1 
 
-    #trial 2
+    #region 2
     if random() < .65:
         A_wins += 1 
     else: 
         B_wins += 1 
 
-    #trial 3
+    #region 3
     if random() < .17:
         A_wins += 1 
     else:
