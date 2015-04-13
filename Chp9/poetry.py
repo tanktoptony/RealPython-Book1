@@ -2,6 +2,7 @@ import random
 
 
 def select_words(available_words):
+  """Returns a list of 3 random non duplicating words from a list of words."""
   word_list = []
   while len(word_list) < 3:
     choice = random.choice(available_words)
@@ -14,7 +15,7 @@ def select_words(available_words):
 
 def make_poem():
   
-  """ returns a multiline string poem"""
+  """ Returns a multiline string poem"""
 
   my_nouns = select_words(nouns)
   my_verbs = select_words(verbs)
@@ -23,6 +24,7 @@ def make_poem():
   my_adjectives = select_words(adjectives)
   starting_word = "A"
   a_an = 'a'
+
   if my_adjectives[0] == 'incredulous' or my_adjectives[0] == 'exuberant':
     starting_word = 'An'
   if my_adjectives[2] == 'incredulous' or my_adjectives[2] == 'exuberant':
