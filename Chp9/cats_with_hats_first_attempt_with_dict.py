@@ -20,12 +20,8 @@ for i in range(1, 101):
 
 
 def put_on_hats():
-  #round 1
-  for key in cats:
-    cats[key] = True
 
-  
-  for round in range(2, 101):
+  for round in range(1, 101):
     for cat in range(1, 101):
       if cat % round == 0:
         if cats['cat' + str(cat)] == False:
@@ -34,13 +30,14 @@ def put_on_hats():
           cats['cat' + str(cat)] = False
 
 
-put_on_hats()
+if __name__=='__main__':
 
+  put_on_hats()
 
-for c, hats in cats.items():
-  #print(c + ':' + cats[c])
-  if cats[c] == True:
-    print(c + ' has a hat.')
+  for c, hats in cats.items():
+    #print(c + ':' + cats[c])
+    if cats[c] == True:
+      print(c + ' has a hat.')
 
   
 
