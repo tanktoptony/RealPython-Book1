@@ -16,7 +16,7 @@ def select_words(available_words):
 def make_poem():
   
   """ Returns a multiline string poem"""
-
+  vowels = ['a', 'e', 'i', 'o', 'u']
   my_nouns = select_words(nouns)
   my_verbs = select_words(verbs)
   my_adverbs = select_words(adverbs)
@@ -25,9 +25,9 @@ def make_poem():
   starting_word = "A"
   a_an = 'a'
 
-  if my_adjectives[0] == 'incredulous' or my_adjectives[0] == 'exuberant':
+  if my_adjectives[0][0] in vowels:
     starting_word = 'An'
-  if my_adjectives[2] == 'incredulous' or my_adjectives[2] == 'exuberant':
+  if my_adjectives[2][0] in vowels:
     a_an = 'an'
 
 
