@@ -6,7 +6,7 @@
 # on, or you take its hat off if it has one on.
 
 # The first round, you stop at every cat, placing a hat on each one.
-# 2. The second round, you only stop at every second cat (#2, #4, #6, #8, etc.).
+# 2. The second round, you only stop at every second cat (#2, #4, #6, #8, etc.)
 # 3. The third round, you only stop at every third cat (#3, #6, #9, #12, etc.).
 # 4. You continue this process until you’ve made 100 rounds around the cats
 # (e.g., you only visit the 100th cat).
